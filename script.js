@@ -70,3 +70,8 @@ function reverseString(str) {
   
 
  console.log(filterArray(["chamano","sidney","yahudah","ben Israel","Ramashia"]))
+
+ /*
+ 5. Write a function that takes a number as input and returns true
+  if the number is prime, and false otherwise.
+ */
