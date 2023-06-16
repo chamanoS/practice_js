@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My eBook</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		.page {
+			display: flex;
+			flex-direction: row;
+			margin: 20px 0;
+		}
+
+		.left-column {
+			flex: 1;
+			padding-right: 20px;
+			border-right: 1px solid black;
+		}
+
+		.right-column {
+			flex: 1;
+			padding-left: 20px;
+			position: relative;
+		}
+
+		.hebrew {
+			font-family: Arial, sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+			direction: rtl;
+			margin: 10px 0;
+			padding-right: 10px;
+			position: relative;
+		}
+
+		.transliteration {
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			direction: rtl;
+			position: absolute;
+			top: 25px;
+			right: 0;
+			color: gray;
+		}
+
+		.verse {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			margin-bottom: 20px;
+		}
+
+		.verse-number {
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			color: gray;
+			margin-right: 10px;
+			min-width: 20px;
+			text-align: right;
+		}
+
+		.verse-text {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			flex: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div class="left-column">
+			<div class="verse">
+				<span class="verse-number">1 </span>
+				<span class="verse-text">In the beginning was the Word, and the Word was with God, and the Word was God.</span>
+			</div>
+			<div class="verse">
+				<span class="verse-number">2 </span>
+				<span class="verse-text">He was with God in the beginning.</span>
+			</div>
+			
+			
+		</div>
+		<div class="right-column">
+            <div class="verse">
+                <span class="verse-number">1 </span>
+                <p class="hebrew">בְּרֵאשִׁ֖ית הָיָ֣ה הַדָּבָ֑ר וְהַדָּבָ֖ר הָיָ֥ה עִם־הָאֱלֹהִ֖ים וְדָ֥בָר הָיָֽה־הָאֱלֹהִים</p>
+                <p class="transliteration">b'resheet haya ha-davar, v'ha-davar haya im ha-elohim, v'davar haya ha-elohim</p>
+            </div>
+            <div class="verse">
+                <span class="verse-number">2 </span>
+                <p class="hebrew">הוּא הָיָה בְּרֵאשִׁית אֵת הָאֱלֹהִים</p>
+                <p class="transliteration">Hu haya b'reishit et ha-Elohim</p>
+            </div>
+          
+        </div>
+    </div>
+</body>
+</html>

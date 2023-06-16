@@ -72,6 +72,34 @@ function reverseString(str) {
  console.log(filterArray(["chamano","sidney","yahudah","ben Israel","Ramashia"]))
 
  /*
- 5. Write a function that takes a number as input and returns true
-  if the number is prime, and false otherwise.
+
+6. Write a function that takes a string as input and returns
+ the number of vowels in that string.
  */
+
+ function vowelCount(str){
+    const createArr = str.split('');
+  let count = 0; 
+  for (let i = 0; i < createArr.length; i++) {
+    if(createArr[i] == "a") {
+      count = count + 1;
+    }
+    else if(createArr[i] == "e") {
+      count = count + 1;
+    }
+    else if(createArr[i] == "i") {
+      count = count + 1;
+    }
+    else if(createArr[i] == "o") {
+      count = count + 1;
+    }
+    else if(createArr[i] == "u") {
+      count = count + 1;
+    }
+   
+  }
+  return count;
+  
+ }
+console.log("running")
+ console.log(vowelCount("rama"))
