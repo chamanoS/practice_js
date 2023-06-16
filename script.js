@@ -102,4 +102,25 @@ function reverseString(str) {
   
  }
 console.log("running")
- console.log(vowelCount("rama"))
+console.log(vowelCount("rama"))
+
+/*
+8. Write a function that takes a string as input and returns true
+if the string is a palindrome (reads the same forwards and backwards),
+and false otherwise.
+*/
+function checkPalindromic(str) {
+
+  const splitStr = str.split('');
+  const reverseStr = splitStr.reverse()
+  const joinStr = reverseStr.join('');
+
+  if ( str == joinStr) {
+    console.log('palidrome')
+  } else{
+    console.log ('not palidrome');
+  }
+
+}
+
+checkPalindromic("madam")
