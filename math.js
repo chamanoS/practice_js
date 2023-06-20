@@ -25,3 +25,47 @@ function averageValue(arr){
     return sum/ arr.length ;
 }
 
+/*
+4. Implement a function to calculate the area of a circle given its radius.
+*/
+
+function areaCircle(radius){
+    const PI = Math.PI;
+    const area = PI.radius*radius;
+    return area ;
+}
+
+/*
+5. Grade calculator
+*/
+
+function calculateAverageGrade(student, passingGrade) {
+    let totalScore = 0;
+    const numOfSubjects = student.scores.length;
+  
+    for (let i = 0; i < numOfSubjects; i++) {
+      totalScore += student.scores[i];
+    }
+  
+    const averageGrade = totalScore / numOfSubjects;
+  
+    let result;
+    if (averageGrade >= passingGrade) {
+      result = "Passed";
+    } else {
+      result = "Failed";
+    }
+  
+    console.log(`Name: ${student.name}`);
+    console.log(`Average Grade: ${averageGrade}`);
+    console.log(`Result: ${result}`);
+  }
+  
+  const student = {
+    name: "John Doe",
+    scores: [80, 90, 75, 85, 95],
+  };
+  
+  const passingGrade = 80;
+  calculateAverageGrade(student, passingGrade);
+  
